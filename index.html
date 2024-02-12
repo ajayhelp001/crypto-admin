@@ -46,7 +46,7 @@
                         <div class="row h-100 flex-column flex-nowrap row-gap-2">
                             <div class="col-12 d-flex flex-column row-gap-2">
                                 <!-- trending cripto bar   -->
-                                <div class="trendingcripto bg-theme1 rounded d-flex align-items-center gap-3" id="trendingcripto">
+                                <div class="trendingcripto bg-theme1 d-flex align-items-center gap-3" id="trendingcripto">
                                     <button class="criptoFilter shadow-none border-0 rounded-1 text-white" id="criptoFilter"><span class="contant text-nowrap">top losers</span><img src="assets/img/icon/Switchsvg.svg" alt="Switchsvg"></button>
                                     <ul class="trendingcripto-list gap-3 m-0 p-0 align-items-center px-2 topcripto" >
                                         <li class="list-item d-flex align-items-center gap-2">POWR/INR <span class="prich">₹33.524</span> <span class="prich text-theme3">+21.90%</span></li>
@@ -72,10 +72,60 @@
                                         <li class="list-item d-flex align-items-center gap-2">BONK/INR <span class="prich">₹33.524</span> <span class="prich text-theme4">-12.55%</span></li>
                                     </ul>
                                 </div>
-                                <div class="row">
+                                <div class="row criptotiming-high g-2">
                                     <div class="col-2">
-                                        <div class="carditem">
-                                            <div class="criptoname">BTC<span>/INR</span></div>
+                                        <div class="carditem bg-theme1 rounded-1 d-flex justify-content-between gap-3 clickable" id="chart-crypto-switch">
+                                            <div class="leftside d-flex flex-column gap-1">
+                                                <div class="criptoname text-theme2">BTC<span class="text-white-50">/INR</span> <img src="assets/img/icon/home.svg" class="ms-2" alt="star"></div>
+                                                <div class="prich d-flex align-items-center gap-2">₹41,33,600 <span class="text-theme4">-0.67%</span></div>
+                                            </div>
+                                            <div class="rightside"><img src="assets/img/icon/right-arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="bg-theme1">
+                                            <div class="row gx-0">
+                                                <div class="col">
+                                                    <div class="carditem miditems">
+                                                        <div class="leftside d-flex flex-column gap-1">
+                                                            <div class="criptoname text-white-50">24h High</div>
+                                                            <div class="prich d-flex align-items-center gap-2">₹41,33,600 </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="carditem miditems">
+                                                        <div class="leftside d-flex flex-column gap-1">
+                                                            <div class="criptoname text-white-50">24h High</div>
+                                                            <div class="prich d-flex align-items-center gap-2">₹41,33,600 </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="carditem miditems">
+                                                        <div class="leftside d-flex flex-column gap-1">
+                                                            <div class="criptoname text-white-50">24h High</div>
+                                                            <div class="prich d-flex align-items-center gap-2">₹41,33,600 </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="carditem miditems">
+                                                        <div class="leftside d-flex flex-column gap-1 ">
+                                                            <div class="criptoname text-white-50">24h High</div>
+                                                            <div class="prich d-flex align-items-center gap-2">₹41,33,600 </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="carditem miditems">
+                                                        <div class="leftside d-flex flex-column gap-1 border-0">
+                                                            <div class="criptoname text-white-50">24h High</div>
+                                                            <div class="prich d-flex align-items-center gap-2">₹41,33,600 </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -85,13 +135,13 @@
                                 <div class="chartpart h-100">
                                     <div class="row h-100">
                                         <!-- cripto Side -->
-                                        <div class="col-3 h-100">
+                                        <div class="col-3 h-100 left-chart-crtpto" id="left-chart-crtpto">
                                             <div class="row h-100 flex-column flex-nowrap">
                                                 <div class="col-12">
-                                                    <form class="d-flex" role="search">
+                                                    <!-- <form class="d-flex" role="search">
                                                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                                                         <button class="btn btn-outline-success" type="submit">Search</button>
-                                                    </form>
+                                                    </form> -->
                                                 </div>
                                                 <div class="col-12 h-100 flex-fill overflow-y-auto">
                                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum itaque consequuntur modi quae quis ad minus nemo sed quaerat quia tempore, deleniti voluptatum beatae impedit tenetur aperiam nulla distinctio expedita nam molestias, rerum possimus quibusdam! Aliquam cupiditate, maxime consectetur sint veritatis ut harum, quas, ipsa officiis temporibus modi nulla. Debitis inventore cupiditate, ducimus non sed consequatur dignissimos cumque ab, odit sit quam error. Ullam pariatur ipsa vitae saepe, laboriosam eligendi impedit quam dolore cum unde iure tempore quidem quod sunt at praesentium repudiandae earum eius? Ipsum, velit cupiditate? Nihil id, ducimus tenetur veniam laborum provident mollitia dolore molestiae repudiandae magni quas perspiciatis rerum harum illo odit veritatis natus, velit, quo assumenda eaque. Omnis explicabo, possimus accusamus adipisci, impedit dolores dolorum repellat voluptate beatae blanditiis excepturi fuga natus velit quasi nisi exercitationem. Sint accusantium quis corrupti corporis at saepe ipsum nostrum modi facilis quisquam, consequatur esse illo molestiae alias est veniam sed doloremque delectus accusamus quas repellendus pariatur ad labore! Molestias, nostrum? Ipsam pariatur non illum aperiam explicabo porro ad voluptates, id, tenetur voluptatem provident cupiditate omnis eligendi sint odit facere dolorem eum quibusdam neque molestias ab. Vitae deserunt repellat recusandae sequi ipsum quia veritatis maxime ea itaque. Tenetur, ipsa veniam.</p>
@@ -101,7 +151,7 @@
                                         <!-- cripto Side End -->
     
                                         <!-- chart side -->
-                                        <div class="col-9 h-100 overflow-y-auto">
+                                        <div class="col h-100 overflow-y-auto">
                                             <div class="candelChart">
                                                 <div class="" id="chart"></div>
                                             </div>

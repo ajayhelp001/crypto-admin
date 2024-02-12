@@ -21,7 +21,15 @@ criptoFilter.addEventListener('click', () => {
     }
 });
 
-// cripto exchange
-
 
 // cripto Filter End
+
+
+// chart-crypto-switch Start
+const cryptoswitch = document.querySelector('#chart-crypto-switch')
+const chartcrypto = document.querySelector('#left-chart-crtpto')
+
+cryptoswitch.addEventListener('click', ()=>{
+    cryptoswitch.classList.toggle('active')
+    chartcrypto.classList.toggle('active');
+})

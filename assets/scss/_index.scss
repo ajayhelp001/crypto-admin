@@ -39,3 +39,54 @@
 }
 
 
+
+// criptotiming-high
+.criptotiming-high {
+    & .carditem {
+        padding: 0.5rem 0.75rem;
+        & .leftside {
+            & .criptoname {
+                font-size: 14px;
+                & img {
+                    width: 16px;
+                }
+            }
+            & .prich {
+                font-size: 14px;
+                & span {
+                    font-size: 12px;
+                }
+            }
+        }
+        & .rightside {
+            & img {
+                width: 16px;
+                object-fit: contain;
+            }
+        }
+        &.active{
+            & .rightside {
+                & img {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        &.miditems {
+            & .leftside {
+                border-right: 1px solid lighten($theme1, 20);
+                align-items: center;
+            }
+        }
+    }
+}
+
+
+
+// left-chart-crtpto
+.left-chart-crtpto {
+    transition: all 0.3s;
+    &.active {
+        transform: translateX(-100%);
+        width: 0px;
+    }
+}

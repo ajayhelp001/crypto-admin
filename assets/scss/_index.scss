@@ -86,7 +86,12 @@
 .left-chart-crtpto {
     transition: all 0.3s;
     &.active {
-        transform: translateX(-100%);
-        width: 0px;
+        display: none;
+    }
+    & .topheader {
+        background-color: lighten($theme1, 20);
+        & .searchbar {
+            background-color: transparent;
+        }
     }
 }

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+// trending cripto list css
+.trendingcripto {
+    & .trendingcripto-list {
+        display: flex;
+        overflow: auto hidden;
+        & .list-item {
+            font-size: 12px;
+            line-height: normal;
+            color: $white;
+            padding-left: 10px;
+            position: relative;
+            text-transform: uppercase;
+            &::before{
+                content: '';
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background-color: $white;
+                position: absolute;
+                left: 0px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    & .losercripto{
+        display: none;
+    }
+    &.losers-cripto{
+        & .losercripto{
+            display: flex;
+        }
+        & .topcripto{
+            display: none;
+        }
+    }
+}
+
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- *Bootstrap Css* -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- *Custom Css* -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body >
+    <!-- *Admin Structure Start* -->
+    <div class="container-fluid vh-100 overflow-hidden">
+        <div class="row h-100 flex-column flex-nowrap g-2">
+            <div class="col-12 px-0">
+                <nav class="navbar header navbar-expand-lg px-3">
+                    <a class="navbar-brand d-flex" href="index.html"><img src="assets/img/logo.svg" class="object-contain h-100" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav gap-3 align-items-center me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="javascript:;">Spot</a></li>
+                            <li class="nav-item"><a class="nav-link" href="javascript:;">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="javascript:;">Orders</a></li>
+                            <li class="nav-item"><a class="nav-link" href="javascript:;">Wallet & Fees</a></li>
+                            <li class="nav-item"><a class="nav-link deposit text-uppercase fw-medium disabled" aria-disabled="true">Crypto Deposit</a></li>
+                        </ul>
+                        <ul class="navbar-nav gap-3 align-items-center">
+                            <li class="nav-item"><a class="nav-link" href="javascript:;">Contests</a></li>
+                            <li class="nav-item"><a class="nav-link" href="javascript:;">Help Center</a></li>
+                            <li class="nav-item"><a class="nav-link" href="javascript:;"><span><img src="assets/img/icon/contact.svg" alt="contact" class="object-contain w-100"></a></span></li>
+                            <li class="nav-item"><a class="text-uppercase fw-medium btn btn-theme2 themebtn" href="javascript:;">Login / Sign up</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-12 h-100 flex-fill overflow-hidden">
+                <div class="row h-100">
+                    <!-- left Side Start -->
+                    <div class="col-9 h-100 overflow-y-auto">
+                        <div class="row h-100 flex-column flex-nowrap row-gap-2">
+                            <div class="col-12 d-flex flex-column row-gap-2">
+                                <!-- trending cripto bar   -->
+                                <div class="trendingcripto bg-theme1 rounded d-flex align-items-center gap-3" id="trendingcripto">
+                                    <button class="criptoFilter shadow-none border-0 rounded-1 text-white" id="criptoFilter"><span class="contant text-nowrap">top losers</span><img src="assets/img/icon/Switchsvg.svg" alt="Switchsvg"></button>
+                                    <ul class="trendingcripto-list gap-3 m-0 p-0 align-items-center px-2 topcripto" >
+                                        <li class="list-item d-flex align-items-center gap-2">POWR/INR <span class="prich">₹33.524</span> <span class="prich text-theme3">+21.90%</span></li>
+                                        <li class="list-item d-flex align-items-center gap-2">UMA/INR <span class="prich">₹83.24</span> <span class="prich text-theme3">+51.90%</span></li>
+                                        <li class="list-item d-flex align-items-center gap-2">IMX/INR <span class="prich">₹58.54</span> <span class="prich text-theme3">+52.70%</span></li>
+                                        <li class="list-item d-flex align-items-center gap-2">BCH/INR <span class="prich">₹43.67</span> <span class="prich text-theme3">+41.60%</span></li>
+                                        <li class="list-item d-flex align-items-center gap-2">POLYX/INR <span class="prich">₹55.504</span> <span class="prich text-theme3">+84.32%</span></li>
+                                        <li class="list-item d-flex align-items-center gap-2">POWR/INR <span class="prich">₹33.524</span> <span class="prich text-theme3">+21.90%</span></li>
+                                        <li class="list-item d-flex align-items-center gap-2">UMA/INR <span class="prich">₹83.24</span> <span class="prich text-theme3">+51.90%</span></li>
+                                        <li class="list-item d-flex align-items-center gap-2">IMX/INR <span class="prich">₹58.54</span> <span class="prich text-theme3">+52.70%</span></li>
+                                        <li class="list-item d-flex align-items-center gap-2">BCH/INR <span class="prich">₹43.67</span> <span class="prich text-theme3">+41.60%</span></li>
+                                        <li class="list-item d-flex align-items-center gap-2">POLYX/INR <span class="prich">₹55.504</span> <span class="prich text-theme3">+84.32%</span></li>
+                                    </ul>
+                                    <ul class="trendingcripto-list gap-3 m-0 p-0 align-items-center px-2 losercripto">
+                                        <li class="list-item d-flex align-items-center gap-2">REQ/INR <span class="prich">₹9.943</span> <span class="prich text-theme4">-10.90%</span></li>
+                                        <li class="list-item d-flex align-items-center gap-2">BONK/INR <span class="prich">₹53.524</span> <span class="prich text-theme4">-5.50%</span></li>
+                                        <li class="list-item d-flex align-items-center gap-2">ICP/INR <span class="prich">₹83.524</span> <span class="prich text-theme4">-21.57%</span></li>
+                                        <li class="list-item d-flex align-items-center gap-2">JTO/INR <span class="prich">₹35.14</span> <span class="prich text-theme4">-50.18%</span></li>
+                                        <li class="list-item d-flex align-items-center gap-2">POWR/INR <span class="prich">₹18.524</span> <span class="prich text-theme4">-14.88%</span></li>
+                                        <li class="list-item d-flex align-items-center gap-2">BONK/INR <span class="prich">₹10.182</span> <span class="prich text-theme4">-25.70%</span></li>
+                                        <li class="list-item d-flex align-items-center gap-2">ICP/INR <span class="prich">₹43.524</span> <span class="prich text-theme4">-43.40%</span></li>
+                                        <li class="list-item d-flex align-items-center gap-2">JTO/INR <span class="prich">₹38.50</span> <span class="prich text-theme4">-21.90%</span></li>
+                                        <li class="list-item d-flex align-items-center gap-2">BONK/INR <span class="prich">₹33.524</span> <span class="prich text-theme4">-12.55%</span></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <div class="carditem">
+                                            <div class="criptoname">BTC<span>/INR</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- trending cripto bar End  -->
+                            </div>
+                            <div class="col-12 h-100 flex-fill overflow-hidden">
+                                <div class="chartpart h-100">
+                                    <div class="row h-100">
+                                        <!-- cripto Side -->
+                                        <div class="col-3 h-100">
+                                            <div class="row h-100 flex-column flex-nowrap">
+                                                <div class="col-12">
+                                                    <form class="d-flex" role="search">
+                                                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                                        <button class="btn btn-outline-success" type="submit">Search</button>
+                                                    </form>
+                                                </div>
+                                                <div class="col-12 h-100 flex-fill overflow-y-auto">
+                                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum itaque consequuntur modi quae quis ad minus nemo sed quaerat quia tempore, deleniti voluptatum beatae impedit tenetur aperiam nulla distinctio expedita nam molestias, rerum possimus quibusdam! Aliquam cupiditate, maxime consectetur sint veritatis ut harum, quas, ipsa officiis temporibus modi nulla. Debitis inventore cupiditate, ducimus non sed consequatur dignissimos cumque ab, odit sit quam error. Ullam pariatur ipsa vitae saepe, laboriosam eligendi impedit quam dolore cum unde iure tempore quidem quod sunt at praesentium repudiandae earum eius? Ipsum, velit cupiditate? Nihil id, ducimus tenetur veniam laborum provident mollitia dolore molestiae repudiandae magni quas perspiciatis rerum harum illo odit veritatis natus, velit, quo assumenda eaque. Omnis explicabo, possimus accusamus adipisci, impedit dolores dolorum repellat voluptate beatae blanditiis excepturi fuga natus velit quasi nisi exercitationem. Sint accusantium quis corrupti corporis at saepe ipsum nostrum modi facilis quisquam, consequatur esse illo molestiae alias est veniam sed doloremque delectus accusamus quas repellendus pariatur ad labore! Molestias, nostrum? Ipsam pariatur non illum aperiam explicabo porro ad voluptates, id, tenetur voluptatem provident cupiditate omnis eligendi sint odit facere dolorem eum quibusdam neque molestias ab. Vitae deserunt repellat recusandae sequi ipsum quia veritatis maxime ea itaque. Tenetur, ipsa veniam.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- cripto Side End -->
+    
+                                        <!-- chart side -->
+                                        <div class="col-9 h-100 overflow-y-auto">
+                                            <div class="candelChart">
+                                                <div class="" id="chart"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- left Side End -->
+
+                    <!-- Right Side Start -->
+                    <div class="col-3">
+
+                    </div>
+                    <!-- Right Side End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Admin Structure End -->
+
+
+    <!-- *Bootstrap Js* -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- *Custom Js* -->
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -15,163 +15,853 @@
 <body >
     <!-- *Admin Structure Start* -->
     <div class="container-fluid vh-100 overflow-hidden">
-        <div class="row h-100 flex-column flex-nowrap g-2">
-            <div class="col-12 px-0">
-                <nav class="navbar header navbar-expand-lg px-3">
-                    <a class="navbar-brand d-flex" href="index.html"><img src="assets/img/logo.svg" class="object-contain h-100" alt="logo"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav gap-3 align-items-center me-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="javascript:;">Spot</a></li>
-                            <li class="nav-item"><a class="nav-link" href="javascript:;">Portfolio</a></li>
-                            <li class="nav-item"><a class="nav-link" href="javascript:;">Orders</a></li>
-                            <li class="nav-item"><a class="nav-link" href="javascript:;">Wallet & Fees</a></li>
-                            <li class="nav-item"><a class="nav-link deposit text-uppercase fw-medium disabled" aria-disabled="true">Crypto Deposit</a></li>
-                        </ul>
-                        <ul class="navbar-nav gap-3 align-items-center">
-                            <li class="nav-item"><a class="nav-link" href="javascript:;">Contests</a></li>
-                            <li class="nav-item"><a class="nav-link" href="javascript:;">Help Center</a></li>
-                            <li class="nav-item"><a class="nav-link" href="javascript:;"><span><img src="assets/img/icon/contact.svg" alt="contact" class="object-contain w-100"></a></span></li>
-                            <li class="nav-item"><a class="text-uppercase fw-medium btn btn-theme2 themebtn" href="javascript:;">Login / Sign up</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            <div class="col-12 h-100 flex-fill overflow-hidden">
-                <div class="row h-100">
-                    <!-- left Side Start -->
-                    <div class="col-9 h-100 overflow-y-auto">
-                        <div class="row h-100 flex-column flex-nowrap row-gap-2">
-                            <div class="col-12 d-flex flex-column row-gap-2">
-                                <!-- trending cripto bar   -->
-                                <div class="trendingcripto bg-theme1 d-flex align-items-center gap-3" id="trendingcripto">
-                                    <button class="criptoFilter shadow-none border-0 rounded-1 text-white" id="criptoFilter"><span class="contant text-nowrap">top losers</span><img src="assets/img/icon/Switchsvg.svg" alt="Switchsvg"></button>
-                                    <ul class="trendingcripto-list gap-3 m-0 p-0 align-items-center px-2 topcripto" >
-                                        <li class="list-item d-flex align-items-center gap-2">POWR/INR <span class="prich">₹33.524</span> <span class="prich text-theme3">+21.90%</span></li>
-                                        <li class="list-item d-flex align-items-center gap-2">UMA/INR <span class="prich">₹83.24</span> <span class="prich text-theme3">+51.90%</span></li>
-                                        <li class="list-item d-flex align-items-center gap-2">IMX/INR <span class="prich">₹58.54</span> <span class="prich text-theme3">+52.70%</span></li>
-                                        <li class="list-item d-flex align-items-center gap-2">BCH/INR <span class="prich">₹43.67</span> <span class="prich text-theme3">+41.60%</span></li>
-                                        <li class="list-item d-flex align-items-center gap-2">POLYX/INR <span class="prich">₹55.504</span> <span class="prich text-theme3">+84.32%</span></li>
-                                        <li class="list-item d-flex align-items-center gap-2">POWR/INR <span class="prich">₹33.524</span> <span class="prich text-theme3">+21.90%</span></li>
-                                        <li class="list-item d-flex align-items-center gap-2">UMA/INR <span class="prich">₹83.24</span> <span class="prich text-theme3">+51.90%</span></li>
-                                        <li class="list-item d-flex align-items-center gap-2">IMX/INR <span class="prich">₹58.54</span> <span class="prich text-theme3">+52.70%</span></li>
-                                        <li class="list-item d-flex align-items-center gap-2">BCH/INR <span class="prich">₹43.67</span> <span class="prich text-theme3">+41.60%</span></li>
-                                        <li class="list-item d-flex align-items-center gap-2">POLYX/INR <span class="prich">₹55.504</span> <span class="prich text-theme3">+84.32%</span></li>
-                                    </ul>
-                                    <ul class="trendingcripto-list gap-3 m-0 p-0 align-items-center px-2 losercripto">
-                                        <li class="list-item d-flex align-items-center gap-2">REQ/INR <span class="prich">₹9.943</span> <span class="prich text-theme4">-10.90%</span></li>
-                                        <li class="list-item d-flex align-items-center gap-2">BONK/INR <span class="prich">₹53.524</span> <span class="prich text-theme4">-5.50%</span></li>
-                                        <li class="list-item d-flex align-items-center gap-2">ICP/INR <span class="prich">₹83.524</span> <span class="prich text-theme4">-21.57%</span></li>
-                                        <li class="list-item d-flex align-items-center gap-2">JTO/INR <span class="prich">₹35.14</span> <span class="prich text-theme4">-50.18%</span></li>
-                                        <li class="list-item d-flex align-items-center gap-2">POWR/INR <span class="prich">₹18.524</span> <span class="prich text-theme4">-14.88%</span></li>
-                                        <li class="list-item d-flex align-items-center gap-2">BONK/INR <span class="prich">₹10.182</span> <span class="prich text-theme4">-25.70%</span></li>
-                                        <li class="list-item d-flex align-items-center gap-2">ICP/INR <span class="prich">₹43.524</span> <span class="prich text-theme4">-43.40%</span></li>
-                                        <li class="list-item d-flex align-items-center gap-2">JTO/INR <span class="prich">₹38.50</span> <span class="prich text-theme4">-21.90%</span></li>
-                                        <li class="list-item d-flex align-items-center gap-2">BONK/INR <span class="prich">₹33.524</span> <span class="prich text-theme4">-12.55%</span></li>
-                                    </ul>
-                                </div>
-                                <div class="row criptotiming-high g-2">
-                                    <div class="col-2">
-                                        <div class="carditem bg-theme1 rounded-1 d-flex justify-content-between gap-3 clickable" id="chart-crypto-switch">
-                                            <div class="leftside d-flex flex-column gap-1">
-                                                <div class="criptoname text-theme2">BTC<span class="text-white-50">/INR</span> <img src="assets/img/icon/home.svg" class="ms-2" alt="star"></div>
-                                                <div class="prich d-flex align-items-center gap-2">₹41,33,600 <span class="text-theme4">-0.67%</span></div>
+        <div class="h-100 overflow-y-auto">
+            <div class="row h-100 flex-column flex-nowrap g-2">
+                <div class="col-12 px-0">
+                    <nav class="navbar header navbar-expand-lg px-3">
+                        <a class="navbar-brand d-flex" href="index.html"><img src="assets/img/logo.svg" class="object-contain h-100" alt="logo"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav gap-3 align-items-center me-auto mb-2 mb-lg-0">
+                                <li class="nav-item"><a class="nav-link active" aria-current="page" href="javascript:;">Spot</a></li>
+                                <li class="nav-item"><a class="nav-link" href="javascript:;">Portfolio</a></li>
+                                <li class="nav-item"><a class="nav-link" href="javascript:;">Orders</a></li>
+                                <li class="nav-item"><a class="nav-link" href="javascript:;">Wallet & Fees</a></li>
+                                <li class="nav-item"><a class="nav-link deposit text-uppercase fw-medium disabled" aria-disabled="true">Crypto Deposit</a></li>
+                            </ul>
+                            <ul class="navbar-nav gap-3 align-items-center">
+                                <li class="nav-item"><a class="nav-link" href="javascript:;">Contests</a></li>
+                                <li class="nav-item"><a class="nav-link" href="javascript:;">Help Center</a></li>
+                                <li class="nav-item"><a class="nav-link" href="javascript:;"><span><img src="assets/img/icon/contact.svg" alt="contact" class="object-contain w-100"></a></span></li>
+                                <li class="nav-item"><a class="text-uppercase fw-medium btn btn-theme2 themebtn" href="javascript:;">Login / Sign up</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-12 h-100 flex-fill overflow-hidden">
+                    <div class="row h-100 gx-2">
+                        <!-- left Side Start -->
+                        <div class="col-10 h-100 overflow-y-auto">
+                            <div class="row h-100 flex-column flex-nowrap row-gap-2">
+                                <div class="col-12 d-flex flex-column row-gap-2">
+                                    <!-- trending cripto bar   -->
+                                    <div class="trendingcripto bg-theme1 d-flex align-items-center gap-3" id="trendingcripto">
+                                        <button class="criptoFilter shadow-none border-0 rounded-1 text-white" id="criptoFilter"><span class="contant text-nowrap">top losers</span><img src="assets/img/icon/Switchsvg.svg" alt="Switchsvg"></button>
+                                        <ul class="trendingcripto-list gap-3 m-0 p-0 align-items-center px-2 topcripto" >
+                                            <li class="list-item d-flex align-items-center gap-2">POWR/INR <span class="prich">₹33.524</span> <span class="prich text-theme3">+21.90%</span></li>
+                                            <li class="list-item d-flex align-items-center gap-2">UMA/INR <span class="prich">₹83.24</span> <span class="prich text-theme3">+51.90%</span></li>
+                                            <li class="list-item d-flex align-items-center gap-2">IMX/INR <span class="prich">₹58.54</span> <span class="prich text-theme3">+52.70%</span></li>
+                                            <li class="list-item d-flex align-items-center gap-2">BCH/INR <span class="prich">₹43.67</span> <span class="prich text-theme3">+41.60%</span></li>
+                                            <li class="list-item d-flex align-items-center gap-2">POLYX/INR <span class="prich">₹55.504</span> <span class="prich text-theme3">+84.32%</span></li>
+                                            <li class="list-item d-flex align-items-center gap-2">POWR/INR <span class="prich">₹33.524</span> <span class="prich text-theme3">+21.90%</span></li>
+                                            <li class="list-item d-flex align-items-center gap-2">UMA/INR <span class="prich">₹83.24</span> <span class="prich text-theme3">+51.90%</span></li>
+                                            <li class="list-item d-flex align-items-center gap-2">IMX/INR <span class="prich">₹58.54</span> <span class="prich text-theme3">+52.70%</span></li>
+                                            <li class="list-item d-flex align-items-center gap-2">BCH/INR <span class="prich">₹43.67</span> <span class="prich text-theme3">+41.60%</span></li>
+                                            <li class="list-item d-flex align-items-center gap-2">POLYX/INR <span class="prich">₹55.504</span> <span class="prich text-theme3">+84.32%</span></li>
+                                        </ul>
+                                        <ul class="trendingcripto-list gap-3 m-0 p-0 align-items-center px-2 losercripto">
+                                            <li class="list-item d-flex align-items-center gap-2">REQ/INR <span class="prich">₹9.943</span> <span class="prich text-theme4">-10.90%</span></li>
+                                            <li class="list-item d-flex align-items-center gap-2">BONK/INR <span class="prich">₹53.524</span> <span class="prich text-theme4">-5.50%</span></li>
+                                            <li class="list-item d-flex align-items-center gap-2">ICP/INR <span class="prich">₹83.524</span> <span class="prich text-theme4">-21.57%</span></li>
+                                            <li class="list-item d-flex align-items-center gap-2">JTO/INR <span class="prich">₹35.14</span> <span class="prich text-theme4">-50.18%</span></li>
+                                            <li class="list-item d-flex align-items-center gap-2">POWR/INR <span class="prich">₹18.524</span> <span class="prich text-theme4">-14.88%</span></li>
+                                            <li class="list-item d-flex align-items-center gap-2">BONK/INR <span class="prich">₹10.182</span> <span class="prich text-theme4">-25.70%</span></li>
+                                            <li class="list-item d-flex align-items-center gap-2">ICP/INR <span class="prich">₹43.524</span> <span class="prich text-theme4">-43.40%</span></li>
+                                            <li class="list-item d-flex align-items-center gap-2">JTO/INR <span class="prich">₹38.50</span> <span class="prich text-theme4">-21.90%</span></li>
+                                            <li class="list-item d-flex align-items-center gap-2">BONK/INR <span class="prich">₹33.524</span> <span class="prich text-theme4">-12.55%</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="row criptotiming-high g-2">
+                                        <div class="col-2">
+                                            <div class="carditem bg-theme1 rounded-1 d-flex justify-content-between gap-3 clickable" id="chart-crypto-switch">
+                                                <div class="leftside d-flex flex-column gap-1">
+                                                    <div class="criptoname text-theme2">BTC<span class="text-white text-opacity-75">/INR</span> <img src="assets/img/icon/home.svg" class="ms-2" alt="star"></div>
+                                                    <div class="prich d-flex align-items-center gap-2">₹41,33,600 <span class="text-theme4">-0.67%</span></div>
+                                                </div>
+                                                <div class="rightside"><img src="assets/img/icon/right-arrow.svg" alt="arrow"></div>
                                             </div>
-                                            <div class="rightside"><img src="assets/img/icon/right-arrow.svg" alt="arrow"></div>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="bg-theme1">
+                                                <div class="row gx-0">
+                                                    <div class="col">
+                                                        <div class="carditem miditems">
+                                                            <div class="leftside d-flex flex-column gap-1">
+                                                                <div class="criptoname text-white text-opacity-75">24h High</div>
+                                                                <div class="prich d-flex align-items-center gap-2">₹41,99,999 </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="carditem miditems">
+                                                            <div class="leftside d-flex flex-column gap-1">
+                                                                <div class="criptoname text-white text-opacity-75">24h Low</div>
+                                                                <div class="prich d-flex align-items-center gap-2">₹41,33,600 </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="carditem miditems">
+                                                            <div class="leftside d-flex flex-column gap-1">
+                                                                <div class="criptoname text-white text-opacity-75">24h Volume (BTC)</div>
+                                                                <div class="prich d-flex align-items-center gap-2">4.25806 </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="carditem miditems">
+                                                            <div class="leftside d-flex flex-column gap-1 ">
+                                                                <div class="criptoname text-white text-opacity-75">24h Volume (INR)</div>
+                                                                <div class="prich d-flex align-items-center gap-2">₹1,80,03,483.39</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="carditem miditems">
+                                                            <div class="leftside d-flex flex-column gap-1 border-0">
+                                                                <div class="criptoname text-white text-opacity-75">24h High</div>
+                                                                <div class="prich d-flex align-items-center gap-2">₹41,33,600 </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-10">
-                                        <div class="bg-theme1">
-                                            <div class="row gx-0">
-                                                <div class="col">
-                                                    <div class="carditem miditems">
-                                                        <div class="leftside d-flex flex-column gap-1">
-                                                            <div class="criptoname text-white-50">24h High</div>
-                                                            <div class="prich d-flex align-items-center gap-2">₹41,99,999 </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="carditem miditems">
-                                                        <div class="leftside d-flex flex-column gap-1">
-                                                            <div class="criptoname text-white-50">24h Low</div>
-                                                            <div class="prich d-flex align-items-center gap-2">₹41,33,600 </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="carditem miditems">
-                                                        <div class="leftside d-flex flex-column gap-1">
-                                                            <div class="criptoname text-white-50">24h Volume (BTC)</div>
-                                                            <div class="prich d-flex align-items-center gap-2">4.25806 </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="carditem miditems">
-                                                        <div class="leftside d-flex flex-column gap-1 ">
-                                                            <div class="criptoname text-white-50">24h Volume (INR)</div>
-                                                            <div class="prich d-flex align-items-center gap-2">₹1,80,03,483.39</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="carditem miditems">
-                                                        <div class="leftside d-flex flex-column gap-1 border-0">
-                                                            <div class="criptoname text-white-50">24h High</div>
-                                                            <div class="prich d-flex align-items-center gap-2">₹41,33,600 </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <!-- trending cripto bar End  -->
                                 </div>
-                                <!-- trending cripto bar End  -->
-                            </div>
-                            <div class="col-12 h-100 flex-fill overflow-hidden">
-                                <div class="chartpart h-100">
-                                    <div class="row h-100">
-                                        <!-- cripto Side -->
-                                        <div class="col-3 h-100 left-chart-crtpto" id="left-chart-crtpto">
-                                            <div class="row h-100 flex-column flex-nowrap">
-                                                <div class="col-12">
-                                                    <!-- <form class="d-flex" role="search">
-                                                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                                                    </form> -->
-                                                    <div class="topheader p-2">
-                                                        <form class="d-flex" role="search">
-                                                            <input class="form-control searchbar" type="search" placeholder="Search" aria-label="Search">
-                                                        </form>
+                                <div class="col-12 h-100 flex-fill overflow-hidden">
+                                    <div class="h-100 overflow-y-auto">
+                                        <div class="row h-100 row-gap-2 chartpart">
+                                            <!-- cripto Side -->
+                                            <div class="col-2 h-100 left-chart-crtpto" id="left-chart-crtpto">
+                                                <div class="row h-100 flex-column flex-nowrap">
+                                                    <div class="col-12">
+                                                        <div class="topheader p-2">
+                                                            <form class="d-flex" role="search">
+                                                                <input class="form-control searchbar" type="search" placeholder="Search" aria-label="Search">
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 h-100 flex-fill overflow-y-auto">
+                                                    
                                                     </div>
                                                 </div>
-                                                <div class="col-12 h-100 flex-fill overflow-y-auto">
-                                                
+                                            </div>
+                                            <!-- cripto Side End -->
+                                            <!-- chart side -->
+                                            <div class="col h-100 overflow-y-auto">
+                                                <div class="candelChart">
+                                                    <div class="chart bg-theme1 d-flex align-items-center" id="chart"></div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <!-- cripto Side End -->
-    
-                                        <!-- chart side -->
-                                        <div class="col h-100 overflow-y-auto">
-                                            <div class="candelChart">
-                                                <div class="chart" id="chart"></div>
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-8">
+                                                        <div class="videoside bg-theme1 h-100">
+                                                            <div class="text-center fw-medium fs-14 text-white text-opacity-75 p-2 border-bottom-light">Get to Know CoinSwitch Pro Better</div>
+                                                            <div class="videos text-center py-4">
+                                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/orbkg5JH9C8?si=yvkRG2HegzATVoxl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="lasttrade bg-theme1 h-100">
+                                                            <div class="fw-medium fs-14 text-white text-opacity-75 p-2 border-bottom-light">Last Trades</div>
+                                                            <div class="responsive-table lasttradetable">
+                                                                <table class="table table-borderless align-middle">
+                                                                    <thead>
+                                                                        <tr class="border-bottom-light">
+                                                                            <th class="text-white fw-normal fs-12">Prich</th>
+                                                                            <th class="text-white fw-normal fs-12 text-capitalize"><button class="criptoFilter small-fs shadow-none border-0 rounded-1 text-white text-opacity-75 bg-transparent p-0" id="lasttradeCripto"><span class="quantitycrypto text-nowrap">amount</span><img src="assets/img/icon/Switchsvg.svg" alt="Switchsvg"></button></th>
+                                                                            <th class="text-white fw-normal fs-12">Time</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="text-theme4 fs-12">₹43,36,716</td>
+                                                                            <td class="text-white fs-12 tradamount">₹477.04</td>
+                                                                            <td class="text-white fs-12">17:38:52</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="text-theme3 fs-12">₹43,36,716</td>
+                                                                            <td class="text-white fs-12">₹477.04</td>
+                                                                            <td class="text-white fs-12">17:38:52</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="text-theme4 fs-12">₹43,36,716</td>
+                                                                            <td class="text-white fs-12">₹477.04</td>
+                                                                            <td class="text-white fs-12">17:38:52</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="text-theme4 fs-12">₹43,36,716</td>
+                                                                            <td class="text-white fs-12">₹477.04</td>
+                                                                            <td class="text-white fs-12">17:38:52</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="text-theme3 fs-12">₹43,36,716</td>
+                                                                            <td class="text-white fs-12">₹477.04</td>
+                                                                            <td class="text-white fs-12">17:38:52</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="text-theme3 fs-12">₹43,36,716</td>
+                                                                            <td class="text-white fs-12">₹477.04</td>
+                                                                            <td class="text-white fs-12">17:38:52</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="text-theme3 fs-12">₹43,36,716</td>
+                                                                            <td class="text-white fs-12">₹477.04</td>
+                                                                            <td class="text-white fs-12">17:38:52</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="text-theme3 fs-12">₹43,36,716</td>
+                                                                            <td class="text-white fs-12">₹477.04</td>
+                                                                            <td class="text-white fs-12">17:38:52</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="text-theme4 fs-12">₹43,36,716</td>
+                                                                            <td class="text-white fs-12">₹477.04</td>
+                                                                            <td class="text-white fs-12">17:38:52</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="text-theme3 fs-12">₹43,36,716</td>
+                                                                            <td class="text-white fs-12">₹477.04</td>
+                                                                            <td class="text-white fs-12">17:38:52</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="text-theme4 fs-12">₹43,36,716</td>
+                                                                            <td class="text-white fs-12">₹477.04</td>
+                                                                            <td class="text-white fs-12">17:38:52</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="text-theme4 fs-12">₹43,36,716</td>
+                                                                            <td class="text-white fs-12">₹477.04</td>
+                                                                            <td class="text-white fs-12">17:38:52</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="text-theme3 fs-12">₹43,36,716</td>
+                                                                            <td class="text-white fs-12">₹477.04</td>
+                                                                            <td class="text-white fs-12">17:38:52</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- left Side End -->
+    
+                        <!-- Right Side Start -->
+                        <div class="col-2 h-100">
+                            <div class="row h-100 flex-column flex-nowrap">
+                                <div class="col-12">
+                                    <div class="cryptobuypart py-2 bg-theme1">
+                                        <ul class="nav nav-pills border-bottom-light w-100 justify-content-between px-2 pb-2" id="pills-tab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link py-1 px-2 fs-12 bg-transprent text-white w-100 active" id="pills-home1-tab" data-bs-toggle="pill" data-bs-target="#pills-home1" type="button" role="tab" aria-controls="pills-home1" aria-selected="true">Buy & Sell</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link py-1 px-2 fs-12 bg-transprent text-white w-100" id="pills-profile1-tab" data-bs-toggle="pill" data-bs-target="#pills-profile1" type="button" role="tab" aria-controls="pills-profile1" aria-selected="false">Sell Coins</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link py-1 px-2 fs-12 bg-transprent text-white w-100" id="pills-contact1-tab" data-bs-toggle="pill" data-bs-target="#pills-contact1" type="button" role="tab" aria-controls="pills-contact1" aria-selected="false">Buy Coins</button>
+                                            </li>
+                                        </ul>
+                                        <ul class="list-unstyled m-0 border-bottom-light px-2 py-1 d-flex align-items-center justify-content-between">
+                                            <li><span class="fs-12 text-white text-opacity-75 d-flex">Prich</span></li>
+                                            <li><button class="criptoFilter small-fs shadow-none border-0 rounded-1 text-white text-opacity-75 bg-transparent p-0" id="criptoQuantity"><span class="quantitycrypto text-nowrap">amount</span><img src="assets/img/icon/Switchsvg.svg" alt="Switchsvg"></button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 h-100 flex-fill overflow-y-auto">
+                                    <div class="tab-content bg-theme1 pb-3" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-home1" role="tabpanel" aria-labelledby="pills-home1-tab" tabindex="0">
+                                            <ul class="list-unstyled m-0 cryptoprichGroup border-bottom-light py-2 d-flex flex-column gap-1">
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹43,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 100%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹42,57,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 80%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹43,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 65%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹42,57,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 60%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹33,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,50,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 55%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹43,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 50%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹42,57,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 40%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹43,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 25%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹42,57,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 20%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹33,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,50,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 10%"></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="d-flex align-items-center justify-content-between p-2 border-bottom-light">
+                                                <div class="fs-16 text-white fw-medium m-0">Spread</div>
+                                                <div cclass="fs-16 text-white fw-medium m-0">0.61%</div>
+                                            </div>
+                                            <ul class="list-unstyled m-0 cryptoprichGroup py-2 d-flex flex-column gap-1">
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹43,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 10%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹42,57,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 20%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹33,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,50,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 30%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹43,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 40%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹42,57,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 50%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹33,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,50,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 60%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹43,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 70%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹42,57,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 80%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹43,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 90%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹42,57,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 100%"></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-profile1" role="tabpanel" aria-labelledby="pills-profile1-tab" tabindex="0">
+                                            <div class="p-2 border-bottom-light">
+                                                <div class="fs-16 text-theme3 text-center fw-medium m-0">₹43,12,233</div>
+                                                <!-- <div class="fs-16 text-theme4 text-center fw-medium m-0">₹43,12,233</div> -->
+                                            </div>
+                                            <ul class="list-unstyled m-0 cryptoprichGroup py-2 d-flex flex-column gap-1 border-bottom-light">
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹43,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 100%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹42,57,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 95%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹43,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 90%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹42,57,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 85%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹33,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,50,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 80%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹43,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 75%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹42,57,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 70%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹43,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 65%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹42,57,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 60%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹33,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,50,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 55%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹43,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 50%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹42,57,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 45%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹43,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 40%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹42,57,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 35%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹33,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,50,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 30%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹43,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 25%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹42,57,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 20%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹43,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 15%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹42,57,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 10%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme4">₹33,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,50,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar radzone ms-auto" style="width: 5%"></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-contact1" role="tabpanel" aria-labelledby="pills-contact1-tab" tabindex="0">
+                                            <div class="p-2 border-bottom-light">
+                                                <div class="fs-16 text-theme3 text-center fw-medium m-0">₹43,12,233</div>
+                                                <!-- <div class="fs-16 text-theme4 text-center fw-medium m-0">₹43,12,233</div> -->
+                                            </div>
+                                            <ul class="list-unstyled m-0 cryptoprichGroup py-2 d-flex flex-column gap-1">
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹43,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 5%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹42,57,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 10%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹33,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,50,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 15%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹43,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 20%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹42,57,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 25%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹33,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,50,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 30%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹43,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 35%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹42,57,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 40%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹43,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 45%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹42,57,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 50%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹43,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 55%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹42,57,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 60%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹33,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,50,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 65%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹43,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 70%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹42,57,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 75%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹33,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,50,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 80%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹43,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 85%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹42,57,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 90%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹43,47,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 95%"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="cryptoamount">
+                                                    <div class="contantside d-flex justify-content-between align-items-center px-2">
+                                                        <span class="prich fs-12 text-theme3">₹42,57,878</span>
+                                                        <span class="amount fs-12 text-white">₹6,30,443.01</span>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar greenzone ms-auto" style="width: 100%"></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Right Side End -->
                     </div>
-                    <!-- left Side End -->
-
-                    <!-- Right Side Start -->
-                    <div class="col-3">
+                </div>
+            </div>
+            <div class="col-12 mt-2">
+                <div class="faqsection bg-theme1">
+                    <div class="card-body p-5">
 
                     </div>
-                    <!-- Right Side End -->
                 </div>
             </div>
         </div>

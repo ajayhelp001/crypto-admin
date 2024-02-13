@@ -1,2 +1,48 @@
 @charset "UTF-8";
 
+.border-bottom-light {
+    border-bottom: 1px solid lighten($theme1, 20);
+}
+
+.cryptoprichGroup {
+    & .cryptoamount {
+        position: relative;
+        padding: 4px 0px;
+        & .progress {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            border: none;
+            border-radius: 0px;
+            background: transparent;
+            & .progress-bar {
+                &.radzone{
+                    background-color: rgba($theme4, 0.1);
+                }
+                &.greenzone{
+                    background-color: rgba($theme3, 0.1);
+                }
+            }
+        }
+    }
+}
+
+
+.lasttradetable {
+    & .table {
+        & tr{
+            & th, & td {
+                padding: 0.25rem 0.5rem;
+            }
+        }
+        & thead{
+            & tr {
+                & th:last-child{
+                    width: 80px;
+                }
+            }
+        }
+    }
+}

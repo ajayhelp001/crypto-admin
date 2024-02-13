@@ -247,10 +247,10 @@ var options = {
     ],
     chart: {
         type: "candlestick",
-        height: 500,
+        height: 585,
     },
     title: {
-        text: "CandleStick Chart",
+        text: "BTC/INR",
         align: "left",
     },
     xaxis: {
@@ -268,7 +268,7 @@ var options = {
     grid: {
         show: true,
         borderColor: '#ffffff26', // Color of the gridlines
-        stroke: 1, // Optional: Specify the stroke dash array
+        strokeDashArray: 1, // Optional: Specify the stroke dash array
         position: 'back', // Optional: Specify the position of the gridlines ('back' or 'front')
         xaxis: {
             lines: {

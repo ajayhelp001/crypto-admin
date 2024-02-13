@@ -255,11 +255,30 @@ var options = {
     },
     xaxis: {
         type: "datetime",
+        lines: {
+            show: true, // Show vertical gridlines
+        }
     },
     yaxis: {
         opposite: true,
         tooltip: {
             enabled: true,
+        },
+    },
+    grid: {
+        show: true,
+        borderColor: '#ffffff26', // Color of the gridlines
+        stroke: 1, // Optional: Specify the stroke dash array
+        position: 'back', // Optional: Specify the position of the gridlines ('back' or 'front')
+        xaxis: {
+            lines: {
+                show: true, // Show vertical gridlines
+            }
+        },
+        yaxis: {
+            lines: {
+                show: true, // Hide horizontal gridlines
+            }
         },
     },
     options: {
@@ -282,3 +301,6 @@ var options = {
 
 var chart = new ApexCharts(document.querySelector("#chart"), options);
 chart.render();
+
+
+

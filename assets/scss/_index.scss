@@ -85,13 +85,78 @@
 // left-chart-crtpto
 .left-chart-crtpto {
     transition: all 0.3s;
+    width: 260px;
     &.active {
         display: none;
     }
     & .topheader {
-        background-color: lighten($theme1, 20);
+        background-color: $theme1;
         & .searchbar {
             background-color: transparent;
+        }
+    }
+}
+
+
+// =======================
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.coincard{
+    background-color: transparent;
+    position: relative;
+    transition: all ease-in-out 0.3s;
+    &::before{
+        content: '';
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: lighten($theme1, 20);
+        transition: all ease-in-out 0.3s;
+    }
+    &:last-child{
+        &::before{
+            display: none;
+        }
+    }
+    &.active, &:hover{
+        background-color: rgba($theme2, 0.3);
+        &::before{
+        background-color: rgba($theme2, 0.3);
+        }
+    }
+    & .card-body{
+        & .cryptoside{
+            & .starimg {
+                width: 16px;
+                height: 16px;
+            }
+            & .coinname {
+                & .coinimg {
+                    height: 24px;
+                    width: 24px;
+                }
+                & .coins {
+                    & .exchange {
+                        border-radius: 2px;
+                        width: 12px;
+                        height: 12px;
+                        background-color: darken($theme2, 20);
+                        transform: rotate(90deg);
+                    }
+                    & .partyname {
+                        color: $white;
+                        opacity: 0.75;
+                    }
+                }
+            }
         }
     }
 }
